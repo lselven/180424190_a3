@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device width">
+    <meta name="description" content="Donut shop start-up website">
+    <meta name="author" content="Luxsan S">
+    <title>FakeChimp's Registration Form</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">  -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" async></script>
+</head>
+
+<body onload="onload()">
+    <div class="container">
+
+        <div class="left-column">
+            <img src='img/logo-color.png' width="120" class="desktop">
+            <img src='img/logo-black-white.png' width="120" class="mobile">
+        </div>
+        <br>
+        <div class="right-column">
+            <h1>
+                Get started with your account
+            </h1>
+            <h2>
+                Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.
+            </h2>
+
+            <br>
+            <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register_with_image" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="student_id" id="student_id" value="180424190">
+                <p>
+                    <label for="email">Email</label><br><input type="text" name="email" id="email" required="required"><br>
+                </p>
+                <p>
+                    <label for="country">Country</label><br>
+                    <select name="country" id="country" required="required">
+                            <option value="Canada">Canada</option>
+                            <option value="United States">United States</option>
+                          </select>
+                </p>
+                <p>
+                    <label for="description">Description</label><br>
+                    <textarea name="description" id="description" rows="4" required="required"></textarea>
+                    <!-- <input type="textarea" rows="4" name="description" id="description" value="This is the description."> -->
+                </p>
+                <p>
+                    <label for="avatarImage">Image Upload</label><br>
+                    <input type="file" name="avatarImage" id="avatarImage" required="required">
+                </p>
+
+                <p>
+                    <input type="submit" class="register" id="register" value="Get Started!"> By clicking the "Get Started!" button, you are creating a FakeChimp account.
+                </p>
+            </form>
+
+            <footer>
+                &copy; 2019 All Rights Reserved. FakeChimp&reg; is a registered trademark of WLUCP202 Class.
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device width">
+    <meta name="description" content="Donut shop start-up website">
+    <meta name= "author" content="Luxsan S">
+    <title>Lucky's Donuts - Welcome </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+    
+    <!-- YOU MUST MODIFY THIS VALUE TO POINT TO YOUR ACTUAL CHECKOUT PAGE -->
+    <script>localStorage.checkoutURL = 'checkout.html';</script>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding"> 
+          <h1><span class="hightlight">Lucky's Donut Shop</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="chocolatedonut/index.html">Chocolate Donut</a></li>
+            <li><a href="vanilladonut/index.html">Vanilla Donut</a></li>
+            <li><a href="orders/index.html">Orders</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="./img/choco.png" alt="charseto">
+          <h3>Chocolate Donut</h3>
+          <p>This is the ordinary chocolate donut</p>
+          <button onclick="clientAddItemToCart({prodName: 'Chocolate Donut', prodDesc: 'The ordinary delicous chocolate donut', prodPrice: '10.00', prodQty: '1'});">ADD TO CART</button>
+        </div>
+      </div> 
+
+        <div class="box">
+          <img src="./img/vanilla.png" alt="sprinkle donut">
+          <h3>Vanilla Donut</h3>
+          <p>This is the mystery vanilla donut</p>
+          <button onclick="clientAddItemToCart({prodName: 'Vanilla Donut', prodDesc: 'This is the mystery vanilla donut', prodPrice: '25.00', prodQty: '1'});">ADD TO CART</button>
+        </div>
+    </section>
+
+
+    <section id="order">
+<!--
+    <form action="http://cp202-server.appspot.com/order" method="post">
+      <input type="hidden" name="order_json" id="order_json" value="">
+      <input type="hidden" name="student_id" id="student_id" value="180424190">
+
+      <input type="submit">
+    </form>-->
+
+<!--
+      <form method="post" action="http://cp202-server.appspot.com/order" id="order" name="order">
+        <label for="prodName">Product Name: </label><input type="text" name="prodName" id="prodName" required="required"><br>
+        <label for="prodDesc">Product Description: </label><input type="text" name="prodDesc" id="prodDesc" required="required"><br>
+        <label for="prodPrice">Product Price: </label><input type="text" name="prodPrice" id="prodPrice" required="required"><br>
+        <label for="prodQty">Quantity: </label><input type="text" name="prodQty" id="prodQty" required="required"><br>
+        <br>
+        <input type="hidden" name="order_json" id="order_json" value="">
+        <input type="hidden" name="student_id" id="student_id" value="180424190">
+
+      </form>
+-->
+
+<!--
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+        <script>
+            function myFunction() {
+              document.getElementById("frm1").submit();
+            }
+            </script>
+
+      </form>
+    -->  
+    </section>
+
+
+  </body>
+</html>

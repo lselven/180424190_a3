@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap);
+
+body{
+  font-family: 'Roboto Slab', serif;
+  font: 15px/1.5 Roboto Slab;
+  padding: 0;
+  margin: 0;
+  background-color: lightgreen;
+}
+
+
+/*ALL SHEETS */
+.container{
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+}
+
+ul{
+ margin: 0;
+ padding: 0;
+}
+
+.button_1{
+  background-color:  rgb(194, 255, 194);
+  height: 38px;
+  border:2px solid;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button_1:hover{
+  background-color: rgb(194, 255, 194);
+  color:  rgb(57, 133, 120);
+  border:2px solid black;
+  font-weight: bold;
+
+}
+
+header{
+  background: rgb(194, 255, 194);
+  color: #FFFFFF;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: rgb(38, 95, 202) 5px solid;
+}
+
+header a{
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 18px 0 18px;
+}
+
+header  #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top: 10px;
+}
+
+header .hightlight, header .current a {
+  color:  rgb(38, 95, 202);
+  font: bold;
+}
+
+header a:hover{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgb(38, 95, 202);
+  text-align: center;
+  border-top: rgb(38, 95, 202) 5px solid;
+}
+
+#order h1{
+  font-size: 100px;
+  text-align: center;
+  color: rgb(38, 95, 202);
+  
+}
+
+
+/* boxes */
+
+#boxes {
+  margin-top:70px
+}
+
+#boxes .box{
+    float:left;
+
+    text-align: center;
+    width: 42%;
+    padding: 20px;
+
+}
+
+#boxes .box img{
+  width:200px
+
+}
+#poi .button_2 {
+  background-color: rgb(173, 255, 200);
+  height: 38px;
+  border:2px solid;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#poi .button_2:hover{
+  background-color:rgb(173, 255, 200);
+  color: rgb(38, 95, 202);
+  border:2px solid black;
+  font-weight: bold;
+}
+
+@media(max-width: 768px){
+    header #branding,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box{
+      float: none;
+      text-align:center;
+      width:100%
+    }
+  }
+
+header {
+  padding-bottom:20px;
+}
